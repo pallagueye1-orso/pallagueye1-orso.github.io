@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Palla Gueye · Portfolio data</title>
+<meta name="description" content="Portfolio de Palla Gueye, étudiante en Master 2 Big Data, Analyse et Business Intelligence. Projets en Python, SQL, Spark et Power BI. Stage de 6 mois dès mars 2027.">
+<meta name="theme-color" content="#0F5C63">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230F5C63'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='15' font-weight='700' text-anchor='middle' fill='white'%3EPG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#accueil" aria-label="Palla Gueye, accueil">PG</a>
+    <nav aria-label="Navigation principale">
+      <a href="#projets">Projets</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#competences">Compétences</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section id="accueil" class="hero wrap">
+    <div class="hero-text">
+      <p class="status"><span class="dot" aria-hidden="true"></span>Disponible dès mars 2027 pour un stage de 6 mois</p>
+      <h1>Palla Gueye</h1>
+      <p class="lead">Je transforme des données en informations utiles pour décider.</p>
+      <p class="intro">Étudiante en Master 2 Big Data, Analyse et Business Intelligence à l’Université Sorbonne Paris Nord. J’analyse des données avec Python, SQL et Power BI, et je construis des pipelines reproductibles avec Git et DVC.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projets">Voir mes projets</a>
+        <a class="btn" href="Palla_Gueye_CV.pdf">Télécharger mon CV</a>
+      </div>
+    </div>
+
+    <aside class="schema" aria-label="Fiche récapitulative du profil">
+      <div class="schema-head"><span>profil.csv</span><span>5 champs</span></div>
+      <dl>
+        <div><dt>formation</dt><dd>Master 2 Big Data, Analyse et BI</dd></div>
+        <div><dt>stages</dt><dd>4 en data, finance et gestion</dd></div>
+        <div><dt>outils</dt><dd>Python · SQL · Spark · Power BI</dd></div>
+        <div><dt>langues</dt><dd>italien, wolof, français, anglais</dd></div>
+        <div><dt>lieu</dt><dd>Île-de-France</dd></div>
+      </dl>
+    </aside>
+  </section>
+
+  <section id="projets" class="block wrap">
+    <div class="block-head">
+      <h2>Projets</h2>
+      <p>Trois études, de la question de départ au résultat. Le code est sur GitHub.</p>
+    </div>
+
+    <article class="fiche">
+      <div class="metric">
+        <p class="kind">Analyse de données</p>
+        <p class="big">175 pays</p>
+        <p class="sub">5 924 observations, de 2000 à 2023</p>
+      </div>
+      <div class="body">
+        <h3>Le diplôme protège-t-il du chômage ?</h3>
+        <p class="pitch">Dans quelle mesure le niveau d’éducation influence-t-il l’accès à l’emploi, et cela change-t-il selon les régions ?</p>
+        <dl class="meta">
+          <div><dt>Données</dt><dd>Emploi et chômage par pays, année et niveau d’éducation (ILOSTAT, OIT), nettoyés puis fusionnés.</dd></div>
+          <div><dt>Méthode</dt><dd>Taux de chômage par niveau, comparaisons par région, effet de la crise de 2008, 17 visualisations.</dd></div>
+          <div><dt>Résultat</dt><dd>Chômage moyen de 10,9 % chez les moins diplômés contre 6,9 % chez les plus diplômés. Après 2008, la hausse est plus forte chez les diplômés (+1,6 point contre +0,4). Dans certains pays, les plus diplômés chôment davantage.</dd></div>
+          <div><dt>Limites</dt><dd>Le taux est calculé à partir des effectifs, et l’emploi informel n’est pas couvert.</dd></div>
+        </dl>
+        <ul class="tags" aria-label="Outils"><li>Python</li><li>pandas</li><li>matplotlib</li><li>seaborn</li><li>Jupyter</li><li>en binôme</li></ul>
+        <a class="more" href="https://github.com/pallagueye1-orso/education-employment-analysis">Voir le code sur GitHub</a>
+      </div>
+    </article>
+
+    <article class="fiche">
+      <div class="metric">
+        <p class="kind">Économétrie qualitative</p>
+        <p class="big">1 000 produits</p>
+        <p class="sub">note ordonnée en 4 niveaux</p>
+      </div>
+      <div class="body">
+        <h3>Qu’est-ce qui fait la note Yuka d’un produit ?</h3>
+        <p class="pitch">Projet d’équipe (3 personnes) pour expliquer la note de « Mauvais » à « Excellent » à partir de la composition des produits.</p>
+        <dl class="meta">
+          <div><dt>Données</dt><dd>Calories, sucres, graisses saturées, sel, fibres, protéines, nombre d’additifs, bio, ultra-transformé.</dd></div>
+          <div><dt>Ma part</dt><dd>Présentation des données, statistiques descriptives et analyse exploratoire : corrélations, multicolinéarité, tests ANOVA et Chi².</dd></div>
+          <div><dt>Résultat</dt><dd>36,8 % des produits sont notés « Mauvais » et 13,3 % « Excellent ». Les variables nutritionnelles, le bio et l’ultra-transformation sont toutes liées à la note. L’équipe a ensuite comparé trois modèles de logit ordonné.</dd></div>
+        </dl>
+        <ul class="tags" aria-label="Outils"><li>Python</li><li>pandas</li><li>seaborn</li><li>scipy</li><li>logit ordonné</li></ul>
+        <a class="more" href="https://github.com/pallagueye1-orso/jeu_donnees_YUKA">Voir le code sur GitHub</a>
+      </div>
+    </article>
+
+    <article class="fiche">
+      <div class="metric">
+        <p class="kind">Pipeline de données</p>
+        <p class="big">4 catégories</p>
+        <p class="sub">pain, lait, sucre, champagne</p>
+      </div>
+      <div class="body">
+        <h3>De la collecte d’images au modèle versionné</h3>
+        <p class="pitch">Un pipeline complet qui classe des images de produits alimentaires, et que l’on peut rejouer à l’identique.</p>
+        <dl class="meta">
+          <div><dt>Collecte</dt><dd>Images récupérées par scraping, stockées en brut.</dd></div>
+          <div><dt>Modèle</dt><dd>Découpage en entraînement, validation et test, puis entraînement d’un ResNet-18 et sauvegarde du meilleur modèle.</dd></div>
+          <div><dt>Reproductibilité</dt><dd>Code versionné avec Git, données et modèle versionnés avec DVC.</dd></div>
+        </dl>
+        <ul class="tags" aria-label="Outils"><li>Python</li><li>ResNet-18</li><li>Deep Learning</li><li>Git</li><li>DVC</li></ul>
+        <a class="more" href="https://github.com/pallagueye1-orso/bidabi-clone-alone">Voir le code sur GitHub</a>
+      </div>
+    </article>
+
+    <p class="all">Tous mes dépôts : <a href="https://github.com/pallagueye1-orso?tab=repositories">github.com/pallagueye1-orso</a></p>
+  </section>
+
+  <section id="parcours" class="block wrap">
+    <div class="block-head">
+      <h2>Parcours</h2>
+      <p>Une formation en économie et en data, et quatre stages au contact de vraies données.</p>
+    </div>
+    <div class="cols">
+      <div>
+        <h3 class="label">Formation</h3>
+        <ul class="rows">
+          <li><span class="when">2025 – 2027</span><span class="what"><strong>Master 2 Big Data, Analyse et Business Intelligence</strong><br>Université Sorbonne Paris Nord</span></li>
+          <li><span class="when">2025</span><span class="what"><strong>Licence 3 Économie, Finance, Entreprise</strong><br>Université Sorbonne Paris Nord</span></li>
+          <li><span class="when">2021</span><span class="what"><strong>Baccalauréat Administration, Finance et Marketing</strong><br>Istituto Tecnico Commerciale G. Ginanni, Italie</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="label">Stages en data et analyse</h3>
+        <ul class="rows">
+          <li><span class="when">2023</span><span class="what"><strong>Analyse des ventes</strong><br>GDUSTYL Art, Paris</span></li>
+          <li><span class="when">2021</span><span class="what"><strong>Gestion de données</strong><br>Chambre de Commerce de Ravenne</span></li>
+          <li><span class="when">2020</span><span class="what"><strong>Dossiers fiscaux</strong><br>Confesercenti di Ravenna</span></li>
+          <li><span class="when">2019</span><span class="what"><strong>Recouvrement, KPI et reporting</strong><br>Banque IFIS, Ravenne</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">À côté, j’ai travaillé en hôtellerie-restauration en Italie et en France : encadrement d’équipe, caisse, relation client. Hors écran : tir à l’arc, escalade, voyages et cuisine.</p>
+  </section>
+
+  <section id="competences" class="block wrap">
+    <div class="block-head">
+      <h2>Compétences</h2>
+      <p>Les outils que j’utilise dans mes projets et en cours.</p>
+    </div>
+    <div class="skills">
+      <div class="group"><h3 class="label">Langages</h3><ul class="chips"><li>Python</li><li>SQL</li><li>R</li><li>Scala</li></ul></div>
+      <div class="group"><h3 class="label">Big data</h3><ul class="chips"><li>Spark / PySpark</li><li>Hadoop</li></ul></div>
+      <div class="group"><h3 class="label">Analyse et BI</h3><ul class="chips"><li>Power BI</li><li>Excel</li><li>KPI et reporting</li><li>Data visualisation</li></ul></div>
+      <div class="group"><h3 class="label">Statistiques</h3><ul class="chips"><li>Logit et logit ordonné</li><li>ANOVA</li><li>Chi²</li><li>Analyse exploratoire</li></ul></div>
+      <div class="group"><h3 class="label">Outils</h3><ul class="chips"><li>Git et GitHub</li><li>DVC</li><li>Jupyter</li><li>Google Colab</li><li>VS Code</li><li>Anaconda</li><li>RStudio</li></ul></div>
+      <div class="group"><h3 class="label">En préparation</h3><ul class="chips"><li>Certification Microsoft Azure</li></ul></div>
+    </div>
+    <p class="note">Langues : italien et wolof (langues maternelles), français (bilingue), anglais (B2), espagnol (intermédiaire).</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap contact-in">
+      <h2>Parlons data.</h2>
+      <p>Je cherche un stage de 6 mois à partir de mars 2027, en Île-de-France.</p>
+      <p class="mail"><span id="email">gueyepalla1@gmail.com</span> <button type="button" id="copy" class="btn light">Copier</button></p>
+      <p class="links">
+        <a href="https://fr.linkedin.com/in/palla-gueye-258444215">LinkedIn</a>
+        <a href="https://github.com/pallagueye1-orso">GitHub</a>
+        <a href="Palla_Gueye_CV.pdf">Mon CV (PDF)</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p>© <span id="year">2026</span> Palla Gueye</p>
+    <p><a href="#accueil">Haut de page</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
